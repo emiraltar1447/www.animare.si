@@ -3,7 +3,6 @@ html,body {
     padding: 0;
 }
 #ZgornjaPasica{
-	background-color: pink;
 	width: 950px;
 	height: 100px;
 	display: flex;
@@ -26,21 +25,46 @@ html,body {
 	align-items: flex-end;
 	
 }
+#FacebookTwitter a {
+	margin-bottom: 8px;
+	margin-left: 10px;
+}
+#FacebookTwitter p {
+	font-size: 14px;
+}
 
 #GlavniOkvir {
-	background-color: violet;
 	margin: 0 auto 0;
 	width: 950px;
 }
 #Glava {
-	background-color: magenta;
+	background-image: url('./Grafika/glava.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
 	height: 200px;
 	width: 950px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 #Navigacija {
-	background-color: cyan;
+	background: transparent url('./Grafika/navigacija.jpg') no-repeat center top ;
+	background-size: cover;
 	height: 30px;
 	width: 950px;
+}
+#Navigacija ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+    align-items: center; 
+    list-style-type: none;
+    height: 30px;
+
+}
+#Navigacija li {
+	
 }
 #Vsebina {
 	background-color: green;
