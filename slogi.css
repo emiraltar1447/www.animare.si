@@ -1,10 +1,12 @@
 html,body {
 	margin: 0; 
     padding: 0;
+    font-family: arial, tahoma, helvetica, sans-serif;
+    font-size: 13px;
 }
 #ZgornjaPasica{
-	width: 950px;
 	height: 100px;
+	width: 950px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -34,7 +36,7 @@ html,body {
 }
 
 #GlavniOkvir {
-	margin: 0 auto 0;
+	margin: 0 auto 0 auto;
 	width: 950px;
 }
 #Glava {
@@ -48,7 +50,7 @@ html,body {
 	border-top-right-radius: 20px;
 }
 #Navigacija {
-	background: transparent url('./Grafika/navigacija.jpg') no-repeat center top ;
+	background: transparent url('./Grafika/navigacija.png') no-repeat center top ;
 	background-size: cover;
 	height: 30px;
 	width: 950px;
@@ -61,13 +63,33 @@ html,body {
     align-items: center; 
     list-style-type: none;
     height: 30px;
+    margin: 0px;
 
 }
-#Navigacija li {
+#Navigacija a:link,
+#Navigacija a:visited,
+#Navigacija a:hover, 
+#Navigacija a:active {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	border-bottom: 0px;
+	padding: 7px 10px;
+	box-sizing: border-box;
+	transition: all .75s ease;
+
 	
 }
+#Navigacija a:hover;
+#Navigacija a:active; {
+	background-color: rgba(115,155,210,35);
+	transition: all 1s ease;
+}
+
 #Vsebina {
-	background-color: green;
+	background-color: red;
     min-height: 350px;
     width: 950px;
     display: flex;
@@ -82,12 +104,34 @@ html,body {
 	width: 700px;
 }
 #Sorodno {
-	background-color: orange;
+	background-color: #efe9e7;
+	padding: 20px;
+	border-radius: 20px;
+	margin: 10px 0;
+	box-sizing: border-box;
 	min-height: 350px;
     width: 250px;
 }
+h2{
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	border-bottom: 1px solid #ddd;
+}
 #Noga {
-	background-color: pink;
-	height: 50px;
+	background-image: linear-gradient(to bottom, #739ad0 0,#739ad0 10%, #fff 10%, #fff 15%, #6b3305 15%, #6b3305 100%);
+	background-repeat: repeat-x;
+	color: white;
+	height: 45px;
 	width: 950px;
+	padding: 18px 0 0 20px;
+	margin-bottom: 45px;
+	box-sizing: border-box;
+}
+#Noga a{
+	color: white;
+	text-decoration: none;
+}
+#Noga a:hover {
+	text-decoration: underline;
 }
